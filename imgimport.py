@@ -63,7 +63,7 @@ class ImgDao(object):
             'from': from_domain,  # 来源
             'name': rname,  # 组图名称
             'basedir': folder_name,  # 根路径
-            'imgs': img_paths,  # 图片文件列表
+            'imgs': imgs,  # 图片文件列表
             'level': 0,  # 色情度0-10,越高越暴力
             'star': 0,  # 评价
             "time": datetime.datetime.now()  # 最后更新时间
