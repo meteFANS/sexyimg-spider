@@ -93,7 +93,7 @@ if __name__ == '__main__':
             pass
 
         global DAO
-        DAO = ImgDao('/home/jeff/bar')
+        DAO = ImgDao(args[2])
 
         for domain in domains:
             for f in os.listdir(rootdir + '/' + domain):
@@ -104,25 +104,3 @@ if __name__ == '__main__':
                 except Exception, e:
                     print 'warn: ' + e
         pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
