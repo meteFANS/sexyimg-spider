@@ -1,6 +1,7 @@
 #!/usr/bin/python  
 # -*- coding:utf-8 -*-
 import os
+import shutil
 import pymongo
 import sys
 
@@ -30,5 +31,5 @@ if __name__ == '__main__':
         basedirs = os.listdir(rootdir)
         for basedir in basedirs:
             if os.path.isdir(rootdir + '/' + basedir) and not img_exists(basedir):
-                os.removedirs(rootdir + '/' + basedir)
+                shutil.rmtree(rootdir + '/' + basedir)
     conn.close()
